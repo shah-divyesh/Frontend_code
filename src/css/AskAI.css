@@ -1,0 +1,122 @@
+/* Ask AI Container */
+.ask-ai-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 25px;
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+    border-radius: 15px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Title */
+.ask-ai-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.4);
+}
+
+/* Input Box */
+.ask-ai-input-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.ask-ai-input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    width: 70%;
+    transition: all 0.3s;
+    box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ask-ai-input:focus {
+    border: 2px solid #4ca1af;
+}
+
+.ask-ai-button {
+    padding: 12px 15px;
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.ask-ai-button:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
+}
+
+/* AI Response */
+.ask-ai-response {
+    background: white;
+    color: #333;
+    padding: 15px;
+    border-radius: 15px;
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: left;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 0.6s ease;
+}
+
+/* Lesson Prompt */
+.lesson-prompt {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.lesson-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.lesson-buttons button {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #2c3e50;
+    color: white;
+}
+
+.lesson-buttons button.suggested {
+    background-color: #3498db;
+}
+
+.lesson-buttons button:hover {
+    background-color: #1a252f;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

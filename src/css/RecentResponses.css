@@ -1,0 +1,51 @@
+/* Recent AI Responses Container */
+.recent-responses-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Response List */
+.response-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Individual Response Card */
+.response-card {
+    background: #f8f9fa;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.response-card:hover {
+    transform: scale(1.02);
+}
+
+/* Question & Answer Styling */
+.response-question {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.response-answer {
+    font-size: 15px;
+    color: #555;
+    margin-top: 5px;
+}
+
+.response-timestamp {
+    font-size: 12px;
+    color: gray;
+    margin-top: 5px;
+    text-align: right;
+}
